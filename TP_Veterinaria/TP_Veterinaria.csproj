@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0861C914-A627-4CC9-9231-EEFD99EBCD6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TP_Veterinaria</RootNamespace>
+    <AssemblyName>TP_Veterinaria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\AgregarUsuarios\AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarUsuarios\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ReportesSolicitados\MostarCantidadDeAnimalesXCliente\CantidadAnimalesXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReportesSolicitados\MostarCantidadDeAnimalesXCliente\CantidadAnimalesXCliente.Designer.cs">
+      <DependentUpon>CantidadAnimalesXCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionDeClientes\GestionDeClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionDeClientes\GestionDeClientes.Designer.cs">
+      <DependentUpon>GestionDeClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\InformacionCliente\InformacionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\InformacionCliente\InformacionCliente.Designer.cs">
+      <DependentUpon>InformacionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuPrincipal\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuPrincipal\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MostrarClientes\MostrarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MostrarClientes\MostrarClientes.Designer.cs">
+      <DependentUpon>MostrarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ReportesSolicitados\MostrarReportesPeso\MostrarReportesPeso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReportesSolicitados\MostrarReportesPeso\MostrarReportesPeso.Designer.cs">
+      <DependentUpon>MostrarReportesPeso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Formularios\RegistrarClientes\RegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarClientes\RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ReportesSolicitados\MenuReportesSolicitados\ReportesSolicitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReportesSolicitados\MenuReportesSolicitados\ReportesSolicitados.Designer.cs">
+      <DependentUpon>ReportesSolicitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veterinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veterinaria.Designer.cs">
+      <DependentUpon>Veterinaria.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\AgregarUsuarios\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ReportesSolicitados\MostarCantidadDeAnimalesXCliente\CantidadAnimalesXCliente.resx">
+      <DependentUpon>CantidadAnimalesXCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionDeClientes\GestionDeClientes.resx">
+      <DependentUpon>GestionDeClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\InformacionCliente\InformacionCliente.resx">
+      <DependentUpon>InformacionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuPrincipal\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MostrarClientes\MostrarClientes.resx">
+      <DependentUpon>MostrarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ReportesSolicitados\MostrarReportesPeso\MostrarReportesPeso.resx">
+      <DependentUpon>MostrarReportesPeso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Formularios\RegistrarClientes\RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ReportesSolicitados\MenuReportesSolicitados\ReportesSolicitados.resx">
+      <DependentUpon>ReportesSolicitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veterinaria.resx">
+      <DependentUpon>Veterinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\fondo_blanco_estudio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\NFS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\veterinarian_13203862.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\AgregarCliente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\AgregarCliente1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\Registros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\add-friend_1176405 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\client_6009864 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\service-dog_2472749 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TP_VeterinariaServices\TP_VeterinariaServices.csproj">
+      <Project>{a54e3d06-77c3-4023-95fc-dff63e67dde8}</Project>
+      <Name>TP_VeterinariaServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanco.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
